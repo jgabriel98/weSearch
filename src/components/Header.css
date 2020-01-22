@@ -11,8 +11,15 @@
 .Container{
     height: 100%;
     width: 980px;
+    max-width: 980px;
     display: flex;
     align-items: center;
+}
+.Logo{
+    margin-inline-start: 22px;
+}
+.IconeUser{
+    margin-inline-end: 28px;
 }
 
 .Logo {
