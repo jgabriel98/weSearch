@@ -1,13 +1,54 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: Merriweather, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: local('SourceSansPro'), url(./fonts/sourceSansPro/SourceSansPro-Italic.ttf);
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: local('Merriweather'), url(./fonts/merriweather/Merriweather-LightItalic.ttf) format('truetype');
+  font-weight: lighter;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: local('Merriweather'), url(./fonts/merriweather/Merriweather-BoldItalic.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local('Merriweather'), url(./fonts/merriweather/Merriweather-Light.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(./fonts/merriweather/Merriweather-Italic.ttf) format('truetype');
+  font-style: italic, oblique;
+}
+
+@font-face {
+  font-family: "Merriweather";
+  src: url(./fonts/merriweather/Merriweather-Bold.ttf) format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  src: local('Merriweather'), url(./fonts/merriweather/Merriweather-Regular.ttf) format('truetype');
 }
