@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Slider from 'react-animated-slider';
-import 'react-animated-slider/build/horizontal.css';
+//import 'react-animated-slider/build/horizontal.css';
 
 
 import './Slider.css'
@@ -33,8 +33,6 @@ export default class CarouselSlider extends Component {
                 classNames={{
                     slider: "slider Slider",    //duas classes para manter o css padrão da classe do pacote
                     slide: "slide SlideItem",
-                    previousButton: "previousButton ArrowButon",
-                    nextButton: "nextButton ArrowButon",
                 }}
             >
                 {this.getSlideItens()}
