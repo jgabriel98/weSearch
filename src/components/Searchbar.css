@@ -1,0 +1,47 @@
+.Slider {
+    margin-bottom: 31px;
+}
+
+.SearchbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: 478px;
+    /*background-color: antiquewhite;*/
+}
+
+.SearchbarContainer * {
+    margin: 0 5px;
+}
+.SearchbarContainer *:first-child {
+    margin-block-start: 0;
+}
+.SearchbarContainer *:last-child {
+    margin-block-end: 0;
+}
+
+.SearchbarContainer input:first-child {
+    height: 36px;
+    flex-grow: 1;
+    
+    border: 2px solid;
+    border-color: rgb(55, 70, 135);
+    border-radius: 200px;
+    outline: none;
+
+    font: 17px Merriweather;
+    font-weight: lighter;
+    text-align: center;
+    /*background-color: aquamarine;*/
+}
+
+.SearchbarContainer input:first-child::placeholder{
+    font: italic 17px SourceSansPro ;
+    color: #414141;
+}
+
+.SearchbarFilter {
+    object-fit: contain;
+    width: 26px;
+}
