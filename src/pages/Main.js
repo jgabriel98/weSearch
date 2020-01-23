@@ -4,6 +4,18 @@ import Searchbar from '../components/Searchbar'
 
 import './Main.css'
 
+function AbasSearchbar(){
+    return (
+        <div>
+            <ul>
+                <li>Todos os resultados</li>
+                <li>Pesquisas</li>
+                <li>Divulgação científica</li>
+                <li>Vagas</li>
+            </ul>
+        </div>
+    )
+}
 
 class Main extends Component {
     render() {
@@ -12,6 +24,7 @@ class Main extends Component {
             <div className="MainPageContainer">
                 <CarouselSlider className="Slider" />
                 <Searchbar />
+                <AbasSearchbar />
             </div>
 
         )
