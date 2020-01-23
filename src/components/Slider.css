@@ -1,0 +1,24 @@
+.SliderArrowIcon {
+    object-fit: contain;
+    width: 13px;
+    height: 13px;
+}
+
+.Slider {
+    height: 409px;
+    background-color: antiquewhite;
+}
+
+.SlideItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SlideItem img {
+    object-fit: contain;
+}
+
+.ArrowButon {
+    margin: 0 calc((100% - 980px)/2);
+}
