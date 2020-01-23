@@ -9,7 +9,7 @@ function Menu(props) {
     return (
         <nav className="MenuNavigation">
             <ul>
-                {props.itens.map(item => <li>{item}</li>)}
+                {props.itens.map(item => <li key={item.props.rota}>{item}</li>)}
             </ul>
         </nav>)
 }
@@ -27,17 +27,20 @@ export default class Header extends Component {
 
     render() {
         const itensMenu = [
+            <ItemMenu rota='/' text="Home" />,
             <ItemMenu rota='/pesquisas' text="Pesquisas" />,
             <ItemMenu rota="/editais" text="Editais" />,
             <ItemMenu rota="/vagas" text="Vagas" />,
-            <ItemMenu rota="/sobre" text="Sobre" />,
-            <ItemMenu rota="/noticias" text="Notícias" />,
+            <ItemMenu rota="/sobre_nos" text="Quem Somos" />,
+            //<ItemMenu rota="/noticias" text="Notícias" />,
             <ItemMenu rota="/para_Empresas" text="Para Empresas" />
         ]
         return (
             <header className="Header">
                 <div className="Container">
-                    <img src={logo} className="Logo" alt='logo We search' />
+                    <a className="Logo"href="/">
+                        <img src={logo}  alt='logo We search' />
+                    </a>
                     <Menu itens={itensMenu} />
                     <img src={iconeUsuario} className="IconeUser" alt='ícone de usuário' />
                 </div>

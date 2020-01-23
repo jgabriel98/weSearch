@@ -1,4 +1,4 @@
-.Header{
+.Header {
     height: 83px;
     width: 100%;
     background: #374687;
@@ -8,17 +8,19 @@
     justify-content: center;
 }
 
-.Container{
+.Container {
     height: 100%;
     width: 980px;
     max-width: 980px;
     display: flex;
     align-items: center;
 }
-.Logo{
+
+.Logo {
     margin-inline-start: 22px;
 }
-.IconeUser{
+
+.IconeUser {
     margin-inline-end: 28px;
 }
 
@@ -28,11 +30,12 @@
     float: left;
 }
 
-.MenuNavigation{
+.MenuNavigation {
     flex-grow: 1;
     float: right;
 }
-.MenuNavigation ul{
+
+.MenuNavigation ul {
     list-style: none;
     float: right;
     display: inline-flex;
@@ -40,18 +43,20 @@
     padding-inline-end: 0px;
 }
 
-.MenuNavigation ul li{
+.MenuNavigation ul li {
     height: 23px;
     border-left: 1px solid #D8BDE2;
     margin-left: 12px;
     padding-left: 12px
 }
-.MenuNavigation ul li:first-child{
+
+.MenuNavigation ul li:first-child {
     border-left: 0;
     padding-left: 0;
     margin-left: 12px;
 }
-.MenuNavigation ul li:last-child{
+
+.MenuNavigation ul li:last-child {
     margin-right: 12px;
     /*padding-right: 6px;*/
 }
@@ -63,13 +68,14 @@
     text-decoration: none;
     color: #FFFFFF;
 }
-.NavItemMenu div{
+
+.NavItemMenu div {
     padding: 0 5px;
-    padding-top: 2px;   /*fez o texto mais centalizado, porem nao é forma correta*/
+    padding-top: 2px; /*fez o texto mais centalizado, porem nao é forma correta*/
     width: 100%;
     height: 100%;
     text-align: center;
-    font: bold 14px/1.4em Arial, Helvetica, sans-serif;
+    font: bold 13px/1.4em Merriweather, Helvetica, sans-serif;
 }
 
 .IconeUser {
