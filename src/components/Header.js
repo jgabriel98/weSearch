@@ -18,7 +18,7 @@ function ItemMenu(props) {
     //return <Link to
     return (
         <a className="NavItemMenu" href={props.rota}>
-            <div>{props.text}</div>
+            <span>{props.text}</span>
         </a>)
 }
 
@@ -33,7 +33,7 @@ export default class Header extends Component {
             <ItemMenu rota="/vagas" text="Vagas" />,
             <ItemMenu rota="/sobre_nos" text="Quem Somos" />,
             //<ItemMenu rota="/noticias" text="Notícias" />,
-            <ItemMenu rota="/para_Empresas" text="Para Empresas" />
+            <ItemMenu rota="/para_Empresas" text="Para empresas" />
         ]
         return (
             <header className="Header">

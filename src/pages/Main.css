@@ -2,4 +2,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+}
+
+.AbasSearchbar{
+    margin-top: 22px;
+    display: inline-flex;
+    align-items: center;
+
+    white-space: nowrap;
+}
+
+.AbasSearchbar ul{
+    padding: 0 20px;
+    list-style: none;
+    display: inline-flex;
+}
+
+.AbasSearchbar ul li{
+    margin: 0 20px;
+}
+
+.AbasSearchbar ul li:first-child{
+    margin-left: 0;
+}
+.AbasSearchbar ul li:last-child{
+    margin-right: 0;
 }

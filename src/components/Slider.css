@@ -5,26 +5,25 @@
 }
 
 .Slider {
-    height: 409px;
+    height: 410px;
     background-color: antiquewhite;
 }
 
-.SlideItem {
+.Slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.SlideItem img {
+.Slide img {
     object-fit: contain;
 }
 
-/*daqui pra baixo são os valores padrão do css do github com pequenas alterações ( ex: .previousButton)*/
+/*daqui pra baixo são os valores padrão do css pego no github do plugin. Mas com pequenas alterações ( ex: .previousButton)*/
 
 .slider {
     position: relative;
     width: 100%;
-    height: 400px;
     overflow: hidden
 }
 

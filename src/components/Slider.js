@@ -6,16 +6,29 @@ import Slider from 'react-animated-slider';
 import './Slider.css'
 
 import leftArrowIcon from '../images/Seta.png'
-import imgTeste from '../images/imagemTeste.jpg'
+import img1 from '../images/Retrato de mulher sorridente.webp'
+import img2 from '../images/imagem de mao escrevendo.webp'
 
 
 export default class CarouselSlider extends Component {
 
     getSlideItens = () => {
         return ([
-            <div className='SlideItem' key='teste1'><img src={imgTeste} alt="imagem de teste sem significado"/></div>,
-            <div className='SlideItem' key='teste2'><span>teste</span></div>,
-            <div className='SlideItem' key='teste3'><span>teste3</span></div>
+            <div className='Slide' key='teste1'
+                style={{backgroundColor: '#414141'}}
+            >
+                <img src={img1} alt="retrato de mulher sorridente" />
+            </div>,
+            <div className='Slide' key='teste2'
+                style={{backgroundColor: '##B48755'}}
+            >
+                <img src={img2} alt="imagem de mão escrevendo" />
+            </div>,
+            <div className='Slide' key='teste3'
+                style={{backgroundColor: '#557357'}}
+            >
+                <span>teste3</span>
+            </div>
         ])
     }
 
@@ -32,7 +45,7 @@ export default class CarouselSlider extends Component {
                 nextButton={arrowIcon.right}
                 classNames={{
                     slider: "slider Slider",    //duas classes para manter o css padrão da classe do pacote
-                    slide: "slide SlideItem",
+                    slide: "slide Slide",
                 }}
             >
                 {this.getSlideItens()}
