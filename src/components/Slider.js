@@ -15,17 +15,17 @@ export default class CarouselSlider extends Component {
     getSlideItens = () => {
         return ([
             <div className='Slide' key='teste1'
-                style={{backgroundColor: '#414141'}}
+                style={{ backgroundColor: '#414141' }}
             >
                 <img src={img1} alt="retrato de mulher sorridente" />
             </div>,
             <div className='Slide' key='teste2'
-                style={{backgroundColor: '##B48755'}}
+                style={{ backgroundColor: '##B48755' }}
             >
                 <img src={img2} alt="imagem de mão escrevendo" />
             </div>,
             <div className='Slide' key='teste3'
-                style={{backgroundColor: '#557357'}}
+                style={{ backgroundColor: '#557357' }}
             >
                 <span>teste3</span>
             </div>
@@ -34,9 +34,9 @@ export default class CarouselSlider extends Component {
 
     render() {
         const arrowIcon = {
-            left: <img className="SliderArrowIcon" src={leftArrowIcon} alt='navegar para esquerda' />,
+            left: <img className="SliderArrowIcon"  src={leftArrowIcon} alt='navegar para esquerda' />,
             right: <img className="SliderArrowIcon" src={leftArrowIcon} alt='navegar para direita' style={{ transform: 'rotate(180deg)' }} />
-        }
+        };
 
         return (
             <Slider

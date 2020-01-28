@@ -53,12 +53,22 @@
 }
 
 /*alterados*/
-.slider a.previousButton {
-    left: max(100px, calc((100% - 1610px)/2));
-}
 
-.slider a.nextButton {
-    right: max(100px, calc((100% - 1610px)/2));
+@supports (left: max(1px, 2px)) {
+    .slider a.previousButton {
+        left: max(100px, calc((100% - 1610px)/2));
+    }
+    .slider a.nextButton {
+        right: max(100px, calc((100% - 1610px)/2));
+    }
+}
+@supports not (left: max(1px, 2px)) {
+    .slider a.previousButton {
+        left: calc((100% - 1610px)/2);
+    }
+    .slider a.nextButton {
+        right: calc((100% - 1610px)/2);
+    }
 }
 
 .slide {
