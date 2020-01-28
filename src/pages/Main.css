@@ -5,27 +5,92 @@
     justify-content: flex-start;
 }
 
-.AbasSearchbar{
+.AbasSearchbar {
     margin-top: 22px;
     display: inline-flex;
     align-items: center;
-
     white-space: nowrap;
 }
 
-.AbasSearchbar ul{
+.AbasSearchbar ul {
     padding: 0 20px;
     list-style: none;
     display: inline-flex;
 }
 
-.AbasSearchbar ul li{
+.AbasSearchbar ul li {
     margin: 0 20px;
 }
 
-.AbasSearchbar ul li:first-child{
+.AbasSearchbar ul li:first-child {
     margin-left: 0;
 }
-.AbasSearchbar ul li:last-child{
+
+.AbasSearchbar ul li:last-child {
     margin-right: 0;
+}
+
+.PostBox {
+    width: 336px;
+    margin: 15px;
+    box-shadow: 0px 2px 10px 1px #5c5c5c21;
+    height: fit-content;
+    display: flexbox;
+}
+
+.PostBox_down {
+    display: flex;
+    flex-flow: column;
+}
+
+.PostBox_titulo {
+    --padding: 8px;
+    --top-offset: calc(-1em - var(--padding));
+    display: block;
+    position: relative;
+    font-size: 18px;
+    top: var(--top-offset);
+    padding: var(--padding);
+    margin-bottom: var(--top-offset);
+    width: fit-content;
+    background-color: inherit;
+}
+
+.PostBox_conteudo {
+    justify-self: flex-start;
+    margin: 6px 0 0 0;
+    padding: 0px;
+    display: flex;
+    flex-flow: column;
+    background-color: aliceblue;
+    height: 100%;
+    list-style: none;
+}
+
+.PostBox_conteudo li {
+    background-color: bisque;
+    height: 10px;
+    width: 10px;
+}
+
+.PostBox_conteudo li.PostBox_autor {
+    margin-bottom: 9px;
+}
+
+.PostBox_conteudo li.PostBox_descricao {
+    flex-grow: 1;
+    margin-bottom: 13px;
+}
+
+.PostBox_conteudo li.PostBox_tags {
+    margin-bottom: 13px;
+}
+
+.PostBox_conteudo li.PostBox_interagirBtn {
+    justify-self: flex-end;
+    align-self: center;
+    width: 268px;
+    height: 40px;
+    margin-bottom: 8px;
+    background-color: #557357;
 }
