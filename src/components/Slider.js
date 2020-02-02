@@ -25,26 +25,22 @@ export default class CarouselSlider extends Component {
         let itensConf = [
             generateItem('teste1', '#414141', [
                 <span>descricao aqui</span>,
-                <img src={img1} alt="retrato de mulher sorridente" />])
+                <img src={img1} alt="retrato de mulher sorridente" />]),
+            generateItem('teste2', '#B48755', [
+                <span>descricao aqui</span>,
+                <img src={img2} alt="imagem de mão escrevendo" />]),
+            generateItem('item3', '#557357', [
+                <span>descricao aqui</span>,
+                <span>teste3</span>])
 
         ]
 
-        return ([
-            itensConf[0],
-            /*
-                        <div className='Slide' key='teste2' style={{ backgroundColor: '##B48755' }}>
-                            <img src={img2} alt="imagem de mão escrevendo" />
-                        </div>,
-            
-                        <div className='Slide' key='teste3' style={{ backgroundColor: '#557357' }}>
-                            <span>teste3</span>
-                    </div>*/
-        ])
+        return itensConf;
     }
 
     render() {
         const arrowIcon = {
-            left: <img className="SliderArrowIcon"  src={leftArrowIcon} alt='navegar para esquerda' />,
+            left: <img className="SliderArrowIcon" src={leftArrowIcon} alt='navegar para esquerda' />,
             right: <img className="SliderArrowIcon" src={leftArrowIcon} alt='navegar para direita' style={{ transform: 'rotate(180deg)' }} />
         };
 
