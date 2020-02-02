@@ -15,8 +15,23 @@
     align-items: center;
 }
 
-.Slide img {
+.SlideLefttSide{
+    flex-grow: 1;
+    height: 100%;
+}
+
+.SlideMiddle {
+    width: 980px;
+}
+
+.SlideRightSide{
+    flex-grow: 1;
+    height: 100%;
+}
+
+.SlideMiddle > img {
     object-fit: contain;
+    float: right;
 }
 
 /*daqui pra baixo são os valores padrão do css pego no github do plugin. Mas com pequenas alterações ( ex: .previousButton)*/

@@ -13,22 +13,32 @@ import img2 from '../images/imagem de mao escrevendo.webp'
 export default class CarouselSlider extends Component {
 
     getSlideItens = () => {
-        return ([
-            <div className='Slide' key='teste1'
-                style={{backgroundColor: '#414141'}}
-            >
-                <img src={img1} alt="retrato de mulher sorridente" />
-            </div>,
-            <div className='Slide' key='teste2'
-                style={{backgroundColor: '##B48755'}}
-            >
-                <img src={img2} alt="imagem de mão escrevendo" />
-            </div>,
-            <div className='Slide' key='teste3'
-                style={{backgroundColor: '#557357'}}
-            >
-                <span>teste3</span>
+        const generateItem = (key, color, content) => {
+            return <div className='Slide' key={key}>
+                <div className='SlideLefttSide' style={{ backgroundColor: 'white' }} />
+                <div className='SlideMiddle'>
+                    {content}
+                </div>
+                <div className='SlideRightSide' style={{ backgroundColor: color }} />
             </div>
+        }
+        let itensConf = [
+            generateItem('teste1', '#414141', [
+                <span>descricao aqui</span>,
+                <img src={img1} alt="retrato de mulher sorridente" />])
+
+        ]
+
+        return ([
+            itensConf[0],
+            /*
+                        <div className='Slide' key='teste2' style={{ backgroundColor: '##B48755' }}>
+                            <img src={img2} alt="imagem de mão escrevendo" />
+                        </div>,
+            
+                        <div className='Slide' key='teste3' style={{ backgroundColor: '#557357' }}>
+                            <span>teste3</span>
+                    </div>*/
         ])
     }
 
