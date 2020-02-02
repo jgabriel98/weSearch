@@ -13,6 +13,7 @@ import img2 from '../images/imagem de mao escrevendo.webp'
 export default class CarouselSlider extends Component {
 
     getSlideItens = () => {
+<<<<<<< HEAD
         const generateItem = (key, color, content) => {
             return <div className='Slide' key={key}>
                 <div className='SlideLefttSide' style={{ backgroundColor: 'white' }} />
@@ -20,6 +21,23 @@ export default class CarouselSlider extends Component {
                     {content}
                 </div>
                 <div className='SlideRightSide' style={{ backgroundColor: color }} />
+=======
+        return ([
+            <div className='Slide' key='teste1'
+                style={{ backgroundColor: '#414141' }}
+            >
+                <img src={img1} alt="retrato de mulher sorridente" />
+            </div>,
+            <div className='Slide' key='teste2'
+                style={{ backgroundColor: '##B48755' }}
+            >
+                <img src={img2} alt="imagem de mão escrevendo" />
+            </div>,
+            <div className='Slide' key='teste3'
+                style={{ backgroundColor: '#557357' }}
+            >
+                <span>teste3</span>
+>>>>>>> 92de3ee197c85ab357b04847361ea65ca8ec04d6
             </div>
         }
         let itensConf = [
@@ -44,9 +62,9 @@ export default class CarouselSlider extends Component {
 
     render() {
         const arrowIcon = {
-            left: <img className="SliderArrowIcon" src={leftArrowIcon} alt='navegar para esquerda' />,
+            left: <img className="SliderArrowIcon"  src={leftArrowIcon} alt='navegar para esquerda' />,
             right: <img className="SliderArrowIcon" src={leftArrowIcon} alt='navegar para direita' style={{ transform: 'rotate(180deg)' }} />
-        }
+        };
 
         return (
             <Slider

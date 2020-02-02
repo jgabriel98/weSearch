@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
     
     /*background-color: antiquewhite;*/
 }
@@ -26,8 +27,8 @@
     flex-grow: 1;
     padding: 0;
     
-    border: 2px solid;
-    border-color: rgb(55, 70, 135);
+    box-shadow:0 0 0 2px rgb(55, 70, 135);
+    border: 0;
     border-radius: 200px;
     outline: none;
 
@@ -39,7 +40,15 @@
 
 .SearchbarContainer input:first-child::placeholder{
     font: italic 17px SourceSansPro ;
+    text-align: center;
+    vertical-align: middle;
     color: #414141;
+}
+.SearchbarContainer input:first-child::-moz-placeholder{
+    line-height: 2em;
+}
+.SearchbarContainer input:first-child:hover{
+    box-shadow: 0 0 0 1px rgb(55, 70, 135);
 }
 
 .SearchbarFilter {
